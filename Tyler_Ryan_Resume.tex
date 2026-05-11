@@ -1,20 +1,21 @@
 
 \documentclass[10pt, letterpaper]{article}
 \usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
 \usepackage[margin=0.75in]{geometry}
 \usepackage{titlesec}
 \usepackage{enumitem}
 \usepackage{hyperref}
 \usepackage{xcolor}
 
-% Custom colors
-\definecolor{darkblue}{RGB}{0, 0, 139}
+% Resume color palette
+\definecolor{accentcolor}{RGB}{0, 0, 139}
 
 % Setup hyperref
 \hypersetup{
     colorlinks=true,
-    linkcolor=darkblue,
-    urlcolor=darkblue,
+    linkcolor=accentcolor,
+    urlcolor=accentcolor,
 }
 
 % Section formatting
@@ -29,7 +30,7 @@
 \begin{center}
     {\LARGE \textbf{Tyler T. Ryan}} \\
     \vspace{4pt}
-    Oviedo, FL 32765  | \href{https://github.com/tyleris-irish}{github.com/tyleris-irish}
+    Oviedo, FL 32765 | \href{https://github.com/tyleris-irish}{github.com/tyleris-irish}
 \end{center}
 
 \section{Work Experience}
@@ -37,28 +38,26 @@
 \textbf{University of Central Florida} \hfill Orlando, FL \\
 \textit{Systems Engineer IV (AI Solutions Engineer)} \hfill Feb 2026 -- Present
 \begin{itemize}
-    \item Implemented Portkey Hybrid on Azure Container Apps to provide a centralized gateway and observability for AI model interactions across campus.
-    \item Developed enterprise-grade APIs within Azure APIM to manage access, security, and throttling for various AI-driven services.
-    \item Collaborated on the development of a Model Context Protocol (MCP) server for ServiceNow, creating an autonomous agent for incident creation and assignment.
-    \item Laid the technical foundation for Onyx AI implementation, focusing on scalable RAG (Retrieval-Augmented Generation) infrastructure for university-wide use.
-    \item Transitioned engineering workflows to Agile Sprints to improve project delivery transparency and iterative development.
+    \item Architected and deployed Portkey Hybrid on Azure Container Apps, configuring Entra ID SSO/SCIM via Enterprise Application and managing configuration through Terraform IaC---establishing a centralized AI gateway for LLM orchestration and observability across campus AI services.
+    \item Engineered enterprise-grade APIs in Azure API Management (APIM) enforcing access control, security policies, and rate throttling for AI-driven services, enabling governed LLM consumption at scale.
+    \item Architected Azure Container Apps infrastructure for a Model Context Protocol (MCP) server, enabling the team to deploy an autonomous ServiceNow agent for LLM-driven incident triage and assignment.
+    \item Serve as primary Azure infrastructure architect for AI initiatives, translating team requirements into IaC and CI/CD deployments across Container Apps, APIM, and Entra ID---accelerating delivery of AI-adjacent services.
 \end{itemize}
 
 \vspace{6pt}
 \textit{Cloud Engineer I \& II} \hfill May 2023 -- Feb 2026
 \begin{itemize}
-    \item Acted as lead architect of GitHub Enterprise Cloud across 10+ organizations and 400+ repositories, enforcing security and automating DevOps onboarding.
-    \item Engineered identity and financial governance for GitHub via Entra ID (SSO/RBAC) and established chargeback models with usage tracking and budgets.
-    \item Developed GitHub CI/CD pipelines using Terraform (IaC) and Python to manage F5 infrastructure, transforming manual networking into repeatable automation.
-    \item Developed Python automations utilizing APIs to manage various firewalls, narrowing security scope and minimizing vulnerabilities.
-    \item Migrated 400+ VMs to Azure, addressing firewall rules, hardening cloud security posture, and automating configurations.
+    \item Acted as lead architect of GitHub Enterprise Cloud across 10+ organizations and 400+ repositories, spearheading DevOps onboarding initiatives and enforcing security across the development environment.
+    \item Engineered identity and financial governance for GitHub via Entra ID (SSO/SCIM/RBAC) and established a chargeback model with usage tracking and budgets.
+    \item Sole developer of a GitHub Actions CI/CD pipeline managing F5 infrastructure via Terraform (Infrastructure as Code), leveraging Python to dynamically transform data into repeatable automation patterns.
+    \item Built Python automations utilizing APIs to govern various firewalls, significantly reducing rule complexity, narrowing security scope, and minimizing vulnerabilities.
 \end{itemize}
 
 \vspace{6pt}
 \textit{Cloud Engineering Intern} \hfill March 2022 -- May 2023
 \begin{itemize}
-    \item Supported business operations by maintaining virtual machines and networking in a hybrid cloud environment.
-    \item Leveraged Python and APIs to assist in creating automations and cloud solutions for campus infrastructure.
+    \item Managed virtual machines in vSphere and supported hybrid cloud networking, playing a key role in migrating 400+ VMs to Azure and remediating NSX firewall rules.
+    \item Leveraged Python and APIs to build automations and cloud solutions for campus infrastructure.
 \end{itemize}
 
 \vspace{6pt}
@@ -86,7 +85,7 @@
 \section{Skills}
 \textbf{Certifications:} Microsoft Certified: Azure Fundamentals (AZ-900); Azure Administrator Associate (AZ-104 - Expected Dec 2025) \\
 \textbf{Languages:} Python, HCL/Terraform, Bash, Git, YAML, PowerShell, SQL \\
-\textbf{Applications:} Azure (Container Apps, APIM), Portkey, MCP, GitHub Enterprise, NSX, vSphere, ServiceNow \\
+\textbf{Applications:} Azure (Container Apps, APIM), Portkey, LLM Orchestration, RAG, MCP, GitHub Enterprise, NSX, vSphere, ServiceNow \\
 \textbf{DevOps:} GitHub Actions, CI/CD, Infrastructure as Code (IaC), Secure Pipeline Automation, Agile/Sprints
 
 \section{Education}
