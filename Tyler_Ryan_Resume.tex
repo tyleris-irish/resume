@@ -2,7 +2,7 @@
 \documentclass[10pt, letterpaper]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
-\usepackage[margin=0.75in]{geometry}
+\usepackage[margin=0.6in]{geometry}
 \usepackage{titlesec}
 \usepackage{enumitem}
 \usepackage{hyperref}
@@ -20,10 +20,12 @@
 
 % Section formatting
 \titleformat{\section}{\large\bfseries\uppercase}{}{0em}{}[\titlerule]
-\titlespacing{\section}{0pt}{12pt}{8pt}
+\titlespacing{\section}{0pt}{8pt}{4pt}
 
 % Itemize formatting
-\setlist[itemize]{noitemsep, topsep=0pt, leftmargin=1.5em}
+\setlist[itemize]{noitemsep, topsep=0pt, parsep=0pt, partopsep=0pt, leftmargin=1.5em}
+
+\pagestyle{empty}
 
 \begin{document}
 
@@ -36,7 +38,7 @@
 \section{Work Experience}
 
 \textbf{University of Central Florida} \hfill Orlando, FL \\
-\textit{Systems Engineer IV (AI Solutions Engineer)} \hfill Feb 2026 -- Present
+\textbf{\textit{Systems Engineer IV (AI Solutions Engineer)}} \hfill Feb 2026 -- Present
 \begin{itemize}
     \item Architected and deployed Portkey Hybrid on Azure Container Apps, configuring Entra ID SSO/SCIM via Enterprise Application and managing configuration through Terraform IaC---establishing a centralized AI gateway for LLM orchestration and observability across campus AI services.
     \item Engineered enterprise-grade APIs in Azure API Management (APIM) enforcing access control, security policies, and rate throttling for AI-driven services, enabling governed LLM consumption at scale.
@@ -44,8 +46,8 @@
     \item Serve as primary Azure infrastructure architect for AI initiatives, translating team requirements into IaC and CI/CD deployments across Container Apps, APIM, and Entra ID---accelerating delivery of AI-adjacent services.
 \end{itemize}
 
-\vspace{6pt}
-\textit{Cloud Engineer I \& II} \hfill May 2023 -- Feb 2026
+\vspace{3pt}
+\textbf{\textit{Cloud Engineer I \& II}} \hfill May 2023 -- Feb 2026
 \begin{itemize}
     \item Acted as lead architect of GitHub Enterprise Cloud across 10+ organizations and 400+ repositories, spearheading DevOps onboarding initiatives and enforcing security across the development environment.
     \item Engineered identity and financial governance for GitHub via Entra ID (SSO/SCIM/RBAC) and established a chargeback model with usage tracking and budgets.
@@ -53,16 +55,16 @@
     \item Built Python automations utilizing APIs to govern various firewalls, significantly reducing rule complexity, narrowing security scope, and minimizing vulnerabilities.
 \end{itemize}
 
-\vspace{6pt}
-\textit{Cloud Engineering Intern} \hfill March 2022 -- May 2023
+\vspace{3pt}
+\textbf{\textit{Cloud Engineering Intern}} \hfill March 2022 -- May 2023
 \begin{itemize}
     \item Managed virtual machines in vSphere and supported hybrid cloud networking, playing a key role in migrating 400+ VMs to Azure and remediating NSX firewall rules.
     \item Leveraged Python and APIs to build automations and cloud solutions for campus infrastructure.
 \end{itemize}
 
-\vspace{6pt}
+\vspace{4pt}
 \textbf{Engineering and Computer Simulations} \hfill Orlando, FL \\
-\textit{IT Support} \hfill May 2021 -- March 2022
+\textbf{\textit{IT Support}} \hfill May 2021 -- March 2022
 \begin{itemize}
     \item Conducted risk assessments and ensured compliance with cybersecurity frameworks, including NIST SP 800-171 and CMMC 2.0 standards.
     \item Leveraged ITIL best practices to troubleshoot workstations and equipment in person and remotely.
@@ -75,7 +77,7 @@
     \item Developed Python automations for volunteer scheduling and engineered ETL solutions for seamless congregant data transfer between church systems.
 \end{itemize}
 
-\vspace{4pt}
+\vspace{2pt}
 \textbf{Home Lab} \hfill Oct 2022 -- Present
 \begin{itemize}
     \item Engineered a segmented network environment utilizing four VLANs with tailored firewall rules to mitigate lateral movement risks.
