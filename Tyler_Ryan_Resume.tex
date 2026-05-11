@@ -1,0 +1,97 @@
+
+\documentclass[10pt, letterpaper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=0.75in]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{xcolor}
+
+% Custom colors
+\definecolor{darkblue}{RGB}{0, 0, 139}
+
+% Setup hyperref
+\hypersetup{
+    colorlinks=true,
+    linkcolor=darkblue,
+    urlcolor=darkblue,
+}
+
+% Section formatting
+\titleformat{\section}{\large\bfseries\uppercase}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{12pt}{8pt}
+
+% Itemize formatting
+\setlist[itemize]{noitemsep, topsep=0pt, leftmargin=1.5em}
+
+\begin{document}
+
+\begin{center}
+    {\LARGE \textbf{Tyler T. Ryan}} \\
+    \vspace{4pt}
+    Oviedo, FL 32765  | \href{https://github.com/tyleris-irish}{github.com/tyleris-irish}
+\end{center}
+
+\section{Work Experience}
+
+\textbf{University of Central Florida} \hfill Orlando, FL \\
+\textit{Systems Engineer IV (AI Solutions Engineer)} \hfill Feb 2026 -- Present
+\begin{itemize}
+    \item Implemented Portkey Hybrid on Azure Container Apps to provide a centralized gateway and observability for AI model interactions across campus.
+    \item Developed enterprise-grade APIs within Azure APIM to manage access, security, and throttling for various AI-driven services.
+    \item Collaborated on the development of a Model Context Protocol (MCP) server for ServiceNow, creating an autonomous agent for incident creation and assignment.
+    \item Laid the technical foundation for Onyx AI implementation, focusing on scalable RAG (Retrieval-Augmented Generation) infrastructure for university-wide use.
+    \item Transitioned engineering workflows to Agile Sprints to improve project delivery transparency and iterative development.
+\end{itemize}
+
+\vspace{6pt}
+\textit{Cloud Engineer I \& II} \hfill May 2023 -- Feb 2026
+\begin{itemize}
+    \item Acted as lead architect of GitHub Enterprise Cloud across 10+ organizations and 400+ repositories, enforcing security and automating DevOps onboarding.
+    \item Engineered identity and financial governance for GitHub via Entra ID (SSO/RBAC) and established chargeback models with usage tracking and budgets.
+    \item Developed GitHub CI/CD pipelines using Terraform (IaC) and Python to manage F5 infrastructure, transforming manual networking into repeatable automation.
+    \item Developed Python automations utilizing APIs to manage various firewalls, narrowing security scope and minimizing vulnerabilities.
+    \item Migrated 400+ VMs to Azure, addressing firewall rules, hardening cloud security posture, and automating configurations.
+\end{itemize}
+
+\vspace{6pt}
+\textit{Cloud Engineering Intern} \hfill March 2022 -- May 2023
+\begin{itemize}
+    \item Supported business operations by maintaining virtual machines and networking in a hybrid cloud environment.
+    \item Leveraged Python and APIs to assist in creating automations and cloud solutions for campus infrastructure.
+\end{itemize}
+
+\vspace{6pt}
+\textbf{Engineering and Computer Simulations} \hfill Orlando, FL \\
+\textit{IT Support} \hfill May 2021 -- March 2022
+\begin{itemize}
+    \item Conducted risk assessments and ensured compliance with cybersecurity frameworks, including NIST SP 800-171 and CMMC 2.0 standards.
+    \item Leveraged ITIL best practices to troubleshoot workstations and equipment in person and remotely.
+\end{itemize}
+
+\section{Personal Growth}
+
+\textbf{Automation Volunteer | Antioch Community Church Orlando} \hfill May 2020 -- Present
+\begin{itemize}
+    \item Developed Python automations for volunteer scheduling and engineered ETL solutions for seamless congregant data transfer between church systems.
+\end{itemize}
+
+\vspace{4pt}
+\textbf{Home Lab} \hfill Oct 2022 -- Present
+\begin{itemize}
+    \item Engineered a segmented network environment utilizing four VLANs with tailored firewall rules to mitigate lateral movement risks.
+    \item Performed hands-on security exercises using VMs running Kali Linux and Metasploitable to practice vulnerability assessment and penetration testing.
+\end{itemize}
+
+\section{Skills}
+\textbf{Certifications:} Microsoft Certified: Azure Fundamentals (AZ-900); Azure Administrator Associate (AZ-104 - Expected Dec 2025) \\
+\textbf{Languages:} Python, HCL/Terraform, Bash, Git, YAML, PowerShell, SQL \\
+\textbf{Applications:} Azure (Container Apps, APIM), Portkey, MCP, GitHub Enterprise, NSX, vSphere, ServiceNow \\
+\textbf{DevOps:} GitHub Actions, CI/CD, Infrastructure as Code (IaC), Secure Pipeline Automation, Agile/Sprints
+
+\section{Education}
+\textbf{University of Central Florida} \hfill Orlando, FL \\
+M.S. in Cyber Security and Privacy \hfill 2024 -- In Progress (15/30 credit hours completed) \\
+B.S. in Information Technology, Minor in Secure Computing and Networks
+
+\end{document}
