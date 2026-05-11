@@ -2,8 +2,6 @@ name: Compile Resume
 
 on:
   push:
-    branches:
-      - main
     paths-ignore:
       - '*.pdf'
 
